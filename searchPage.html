@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- fonts -->
+  <!-- Css -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/fontawesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+</head>
+<body>
+     <div class="side-bar">
+      <ul class="">
+        <li class="Search">Search</li>
+        <li class="Categories">Categories</li>
+        <li class='Ingredients'>Ingredients</li>
+        <li class='Area'>Area</li>
+        <li class="Contact">Contact Us</li>
+      </ul>
+      <div class="icon">
+        <div class="menu-bar d-block"><i class="fa-solid fa-bars fs-4"></i></div>
+       <div class="close d-none"><i class="fa-solid fa-xmark fs-4"></i></div>
+      </div>
+    </div>
+  <div class="d-flex gap-4  py-5 g-5 container m-auto">
+<div class="col"><input type="text" class="form-control name" placeholder="search by name"></div>  
+<div class="col"><input type="text" class="form-control letter"  maxlength="1"placeholder="search by first letter"></div>    
+    </div>
+      <div class="row py-5 g-4  container m-auto">
+   
+      <span class="loading "></span>
+    </div>
+  <script type="module" src="js/searchPage.js"></script>
+</body>
+</html>

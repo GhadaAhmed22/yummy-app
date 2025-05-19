@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    background-color: black;
+}
+
+.side-bar {
+   
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  left:-200px;
+transition: all 1s;
+}
+
+.side-bar.active {
+  left:0px;
+} 
+.side-bar.active ul li{
+    transform: translateY(40%); /* Shift back to normal position */
+    opacity: 1; /* Fade in */
+     color: aliceblue;
+    margin-top: 20px;
+}
+.side-bar ul{
+ padding: 40px 60px;
+list-style: none;
+background-color: #000000;
+ width: 200px;
+ height: 100vh;
+ position: relative;
+}
+.side-bar ul li{
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+     transform: translateY(-100%); /* Start shifted left (hidden) */
+    opacity: 0; /* Start invisible */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+            margin-top: 20px;
+}
+.side-bar ul li:nth-child(1) { transition-delay: 0.1s; }
+.side-bar ul li:nth-child(2) { transition-delay: 0.2s; }
+.side-bar ul li:nth-child(3) { transition-delay: 0.3s; }
+.side-bar ul li:nth-child(4) { transition-delay: 0.4s; }
+.side-bar ul li:nth-child(5) { transition-delay: 0.5s; }
+.side-bar ul li.anmation{
+    transform: translate(40%,-40%);
+
+}
+
+.side-bar .icon{
+    width: 48px;
+    height: 100vh;
+    background-color: #ffffff; 
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  
+}
+
+/* .meal{
+    position: relative;   
+    cursor: pointer;
+}
+.meal .overlay {
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+    background-color:#c509097a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s;
+    /* margin-inline: 8px; */
+    /* z-index: 9;
+} */
+
+.meal {
+    padding: 0 8px; /* Add padding if needed */
+}
+
+.inner-column {
+    position: relative;
+    overflow: hidden; /* This ensures overlay doesn't exceed bounds */
+}
+
+.meal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s;
+}
+.meal .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffffaf;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateY(100%);
+    cursor: pointer;
+}
+.meal:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+i{
+    font-size: 56px !important;
+    margin-bottom: 10px;
+}
+.content-area .meal_desc{
+    text-align: center;
+}
+.meal:hover .overlay {
+top: 0;
+opacity: 1;
+
+} */
+.meal_desc{
+    text-align: center;
+
+}
+h3{
+    cursor: pointer;
+}
+.ingerdaints span{
+    background: #ef4040;
+    color:#fff;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+.tags span{
+    background: #016440;
+    color:#fff;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+.source a{
+    text-decoration: none;
+    color:#fff;
+
+    
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #ff0000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+   
+  position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(50%,-50%);
+    
+
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+

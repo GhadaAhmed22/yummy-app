@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- fonts -->
+    <!-- Css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="side-bar">
+        <ul class="">
+            <li class="Search">Search</li>
+            <li class="Categories">Categories</li>
+            <li class='Ingredients'>Ingredients</li>
+            <li class='Area'>Area</li>
+            <li class="Contact">Contact Us</li>
+        </ul>
+        <div class="icon">
+            <div class="menu-bar d-block"><i class="fa-solid fa-bars fs-4"></i></div>
+            <div class="close d-none"><i class="fa-solid fa-xmark fs-4"></i></div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class=" row g-3 m-auto   ">
+            <div class="col-lg-6 mt-5">
+                <input type="text" class="form-control Name"  id="Name" placeholder="Enter your Name">
+                <div class="alert alert-danger mt-2 alert-name d-none " id="Name-error" role="alert">
+                    Special characters and numbers not allowed
+                 </div>
+            </div>
+            <div class="col-lg-6 mt-5">
+                <input type="Email" class="form-control" id="Email" placeholder="Enter your Email">
+                  <div class="alert alert-danger mt-2 alert-name d-none " id="Email-error" role="alert">
+                    Special characters and numbers not allowed
+            </div>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control " id="Age" placeholder="Enter your Age">
+                  <div class="alert alert-danger mt-2 alert-name d-none " id="Age-error" role="alert">
+                    Special characters and numbers not allowed
+            </div>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control "id="Phone" placeholder="Enter your Phone">
+                  <div class="alert alert-danger mt-2 alert-name d-none " id="Phone-error" role="alert">
+                    Special characters and numbers not allowed
+            </div>
+            </div>
+            <div class="col-lg-6">
+                <input type="Password" class="form-control "id="Password" placeholder="Enter your Password">
+                  <div class="alert alert-danger mt-2 alert-name d-none " id="Password-error" role="alert">
+                    Special characters and numbers not allowed
+            </div>
+            </div>
+            <div class="col-lg-6">
+                <input type="password" class="form-control" id="Repassword" placeholder="Repassword ">
+                  <div class="alert alert-danger mt-2 alert-name d-none " id="Repassword-error" role="alert">
+                    Special characters and numbers not allowed
+            </div>
+
+            </div>
+            <button class="btn btn-warning w-25 m-auto mt-4 SubmitBtn " disabled>Sumbit</button>
+
+
+        </div>
+    </div>
+
+       <div class="row py-5 g-4  container m-auto">
+   
+    </div>
+  
+
+
+    <script type="module" src="js/ContactUS.js"></script>
+</body>
+
+</html>
