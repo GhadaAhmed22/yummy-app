@@ -23,7 +23,9 @@ async function getAllMeals() {
 }
 
 // getAllMeals()
-if (window.location.pathname.includes('index.html')|| window.location.pathname === '/') {
+if (window.location.pathname.includes('index.html') || 
+    window.location.pathname === '/yummy-app/' || 
+    window.location.pathname === '/yummy-app/index.html') {
   getAllMeals(); // Only runs on the homepage
   CategoriesPage.addEventListener('click',()=>{
  console.log('cat'); 
