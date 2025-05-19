@@ -23,7 +23,7 @@ async function getAllMeals() {
 }
 
 // getAllMeals()
-if (window.location.pathname.includes('index.html')) {
+if (window.location.pathname.includes('index.html')|| window.location.pathname === '/') {
   getAllMeals(); // Only runs on the homepage
   CategoriesPage.addEventListener('click',()=>{
  console.log('cat'); 
